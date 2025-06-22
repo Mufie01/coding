@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farzana Perfumes - Fragrances</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #c49b66;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    #fragrance-list {
+      margin-top: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background: #fbe6d4;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Farzana Perfumes</h1>
+    <p>Explore Our Signature Fragrances</p>
+  </header>
+
+  <div id="fragrance-list">
+    <ul id="fragranceUl"></ul>
+  </div>
+
+  <script>
+    const fragrances = [
+      "Oudh Al Farzana",
+      "Amber Musk",
+      "White Rose",
+      "Saffron Oud",
+      "Jasmine Nights",
+      "Vanilla Breeze",
+      "Black Orchid",
+      "Mystic Sandal",
+      "Royal Bakhoor"
+    ];
+
+    const fragranceUl = document.getElementById("fragranceUl");
+
+    fragrances.forEach(function(fragrance) {
+      const li = document.createElement("li");
+      li.textContent = fragrance;
+      fragranceUl.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
